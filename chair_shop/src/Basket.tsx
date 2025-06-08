@@ -8,7 +8,6 @@ export default function Backet() {
         <h1>КОРЗИНА</h1>
         А тут твоя корзина с туего тучей товаров! Лошара!
       </aside>
-      
     </div>
   );
 }

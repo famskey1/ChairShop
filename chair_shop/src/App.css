@@ -1,3 +1,30 @@
-.first_form{
+header, footer{
+  padding: 25px;
   box-sizing: border-box;
+  background: burlywood;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+footer{
+  padding: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-align: center;
+}
+form {
+  width: 300px;
+}
+input{
+  padding: 10px;
+  border-radius: 10px;
+  background: antiquewhite;
+  font-size: 14px;
+  margin: 5px;
+  width: 300px;
+  box-sizing: border-box;
+}
+::placeholder {
+  color: rgb(227, 155, 143);
 }
