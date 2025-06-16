@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 
-export default function Backet() {
+export default function Basket() {
   return (
       <aside>
         <h1>КОРЗИНА</h1>

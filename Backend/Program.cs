@@ -36,7 +36,7 @@ app.UseAuthentication();
 app.UseCors(builder =>
 {
 	builder.WithHeaders().AllowAnyHeader();
-	builder.WithOrigins("http://localhost:3000");
+	builder.WithOrigins("http://localhost:5173");
 	builder.WithMethods().AllowAnyMethod();
 });
 app.UseEndpoints(endpoints => endpoints.MapControllers());

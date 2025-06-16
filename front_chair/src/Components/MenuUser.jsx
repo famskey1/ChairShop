@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import typicalUser from './Assets/typicalUser.jpg'
+import '../App.css';
+import typicalUser from '../Assets/typicalUser.jpg'
 export default function MenuUser() {
   return (
       <nav>
