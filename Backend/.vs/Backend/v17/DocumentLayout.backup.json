@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\models\\ord_det.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:models\\ord_det.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\models\\loginpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:models\\loginpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,8 +27,8 @@
       "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\controllers\\ord_detcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,16 +39,16 @@
       "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\models\\loginpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:models\\loginpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|d:\\chairshop\\backend\\models\\ord_det.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C89BC685-D7DE-44C9-852D-598FD9222C86}|Backend.csproj|solutionrelative:models\\ord_det.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,8 +78,8 @@
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\ChairShop\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\ChairShop\\Backend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
+              "ToolTip": "D:\\ChairShop\\Backend\\appsettings.json*",
+              "RelativeToolTip": "appsettings.json*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-16T11:19:05.95Z",
@@ -93,14 +93,14 @@
               "RelativeDocumentMoniker": "Models\\Users.cs",
               "ToolTip": "D:\\ChairShop\\Backend\\Models\\Users.cs",
               "RelativeToolTip": "Models\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T11:02:12.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "LoginPass.cs",
               "DocumentMoniker": "D:\\ChairShop\\Backend\\Models\\LoginPass.cs",
               "RelativeDocumentMoniker": "Models\\LoginPass.cs",
@@ -113,33 +113,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Products.cs",
               "DocumentMoniker": "D:\\ChairShop\\Backend\\Models\\Products.cs",
               "RelativeDocumentMoniker": "Models\\Products.cs",
-              "ToolTip": "D:\\ChairShop\\Backend\\Models\\Products.cs",
-              "RelativeToolTip": "Models\\Products.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "ToolTip": "D:\\ChairShop\\Backend\\Models\\Products.cs*",
+              "RelativeToolTip": "Models\\Products.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T10:54:02.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Orders.cs",
               "DocumentMoniker": "D:\\ChairShop\\Backend\\Models\\Orders.cs",
               "RelativeDocumentMoniker": "Models\\Orders.cs",
-              "ToolTip": "D:\\ChairShop\\Backend\\Models\\Orders.cs",
-              "RelativeToolTip": "Models\\Orders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\ChairShop\\Backend\\Models\\Orders.cs*",
+              "RelativeToolTip": "Models\\Orders.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T10:53:25.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "Ord_det.cs",
               "DocumentMoniker": "D:\\ChairShop\\Backend\\Models\\Ord_det.cs",
               "RelativeDocumentMoniker": "Models\\Ord_det.cs",
@@ -147,44 +147,47 @@
               "RelativeToolTip": "Models\\Ord_det.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:53:01.593Z"
+              "WhenOpened": "2025-06-16T10:53:01.593Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "D:\\ChairShop\\Backend\\Data\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationContext.cs",
               "ToolTip": "D:\\ChairShop\\Backend\\Data\\ApplicationContext.cs",
               "RelativeToolTip": "Data\\ApplicationContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T10:45:18.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\ChairShop\\Backend\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "D:\\ChairShop\\Backend\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowB8AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:30:37.574Z"
+              "WhenOpened": "2025-06-16T10:30:37.574Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\ChairShop\\Backend\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
               "ToolTip": "D:\\ChairShop\\Backend\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwBgAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:30:33.013Z"
+              "WhenOpened": "2025-06-16T10:30:33.013Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -194,9 +197,10 @@
               "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
               "ToolTip": "D:\\ChairShop\\Backend\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:30:28.126Z"
+              "WhenOpened": "2025-06-16T10:30:28.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -206,9 +210,10 @@
               "RelativeDocumentMoniker": "Controllers\\Ord_detController.cs",
               "ToolTip": "D:\\ChairShop\\Backend\\Controllers\\Ord_detController.cs",
               "RelativeToolTip": "Controllers\\Ord_detController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:29:36.197Z"
+              "WhenOpened": "2025-06-16T10:29:36.197Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -218,7 +223,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\ChairShop\\Backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T11:00:28.937Z",
               "EditorCaption": ""

@@ -10,11 +10,9 @@ namespace Backend.Models
 		[Key]
 		public int id_product { get; set; }
 		public string name_product { get; set; }
-		public double price { get; set; }
+		public float price { get; set; }
 		public int count { get; set; }
 		public string description { get; set; }
-
-		[Column(TypeName = "jsonb")]
 		public string fotos { get; set; }
 	}
 }
