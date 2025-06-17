@@ -2,22 +2,20 @@ import React from 'react';
 import './App.css';
 import Register from './Access/Register';
 import LoginPass from './Access/LoginPass';
-import Header from './Default/Header';
-import Footer from './Default/Footer';
-import Basket from './Components/Basket';
-import MenuUser from './Components/MenuUser';
-import ProductDetails from './Components/ProductDetails';
+import { useState } from 'react';
+import TabsAutoReg from './Tabs/TabsAutoReg';
 
 export default function App() {
+  const [tab, setTab] = useState('auto', 'reg')
   return (
-  <div>
-    <Header/>
-    <Register/>
-    <LoginPass/>
-    <ProductDetails/>
-    <MenuUser/>
-    <Basket/>
-    <Footer/>
+  <div className='AuRegMenu'>
+    <TabsAutoReg active = {tab} onChange = {(current) => setTab(current)}/>
+      {tab === 'auto' &&(
+        <LoginPass/> 
+      )}
+      {tab === 'reg' &&(
+        <Register/>
+      )}
   </div>
   )
 }

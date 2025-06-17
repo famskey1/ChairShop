@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import Button from '../Default/Button';
 
 export default function LoginPass() {
   return (
@@ -7,7 +8,7 @@ export default function LoginPass() {
       <form>
         <input type ="text" placeholder='Логин'/>
         <input type ="password" placeholder='Пароль'/>
-        <input type ="submit" value="Войти"/>
+        <Button type ="submit">Войти</Button>
       </form>
     </div>
   );

@@ -1,12 +1,12 @@
 import React from 'react';
 import '../App.css';
-import Button from './Button';
+import icon from "../Assets/icon.png"
 
 export default function Header() {
   return (
-    <header>
-        <h2>МАГАЗИН СТУЛЬЕВ! ТОЛЬКО СТУЛЬЯ!</h2>
-        <Button></Button>
-    </header>
+  <header>
+    <img src={icon} className='iconHeader'></img>
+    <h2>МАГАЗИН СТУЛЬЕВ! ТОЛЬКО СТУЛЬЯ!</h2>
+  </header>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import Button from '../Default/Button';
 
 export default function Register() {
   return (
@@ -11,7 +12,7 @@ export default function Register() {
         <input type ="text" placeholder='Логин'/>
         <input type ="password" placeholder='Пароль'/>
         <input type ="text" placeholder='Адрес доставки на дом'/>
-        <input type ="submit" value="Зарегистрироваться"/>
+        <Button type ="submit">Зарегистрироваться</Button>
       </form>
     </div>
   );
