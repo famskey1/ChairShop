@@ -38,8 +38,8 @@ namespace Backend.Controllers
 			return Ok(orders);
 		}
 
-		[HttpPatch]
-		public async Task<ActionResult<Orders>> Patch(Orders orders)
+		[HttpPut]
+		public async Task<ActionResult<Orders>> Put(Orders orders)
 		{
 			if (orders == null) return BadRequest();
 			if (!db.orders.Any(x => x.id_order == orders.id_user)) return NotFound();

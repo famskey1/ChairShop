@@ -1,11 +1,10 @@
 #root {
   max-width: 1470px;
   padding: 0;
-  margin: 0 auto;
+  margin: auto;
   overflow-y: auto;
   overflow-x: hidden;
 }
-
 *{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'minecraft';

@@ -12,7 +12,7 @@ namespace Backend.Models
 		public string name_product { get; set; }
 		public float price { get; set; }
 		public int count { get; set; }
-		public string description { get; set; }
+		public string? description { get; set; }
 		public string fotos { get; set; }
 	}
 }

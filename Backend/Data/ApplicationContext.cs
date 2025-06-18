@@ -10,12 +10,7 @@ namespace Backend.Data
 		public DbSet<Orders> orders { get; set; }
 		public DbSet<Ord_det> ord_det{ get; set; }
 		public DbSet<Products> products { get; set; }
-		//protected override void OnModelCreating(ModelBuilder modelBuilder)
-		//{
-		//	modelBuilder.Entity<Products>()
-		//		.Property(e => e.fotos)
-		//		.HasColumnType("jsonb");
-		//}
+
 		public ApplicationContext(DbContextOptions<ApplicationContext> options) :base(options) 
 		{ 
 		

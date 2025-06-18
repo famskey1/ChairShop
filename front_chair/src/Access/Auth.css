@@ -1,0 +1,75 @@
+.AuRegMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 1420px;
+}
+.forms-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+.auth-form {
+  position: absolute;
+  width: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-style: preserve-3d;
+}
+.login-form {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+.register-form {
+  transform: rotateY(180deg);
+}
+.forms-container.active .login-form {
+  transform: rotateY(-180deg);
+}
+.forms-container.active .register-form {
+  transform: rotateY(0deg);
+}
+input, button {
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: rgba(250, 235, 215, 0.8);
+  font-size: 14px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.toggle-form {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+.AuRegMenu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+  z-index: -1;
+  opacity: 0.3;
+  animation: gradientShift 15s ease infinite;
+  background-size: 200% 200%;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

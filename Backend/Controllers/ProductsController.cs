@@ -38,8 +38,8 @@ namespace Backend.Controllers
 			return Ok(products);
 		}
 
-		[HttpPatch]
-		public async Task<ActionResult<Products>> Patch(Products products)
+		[HttpPut]
+		public async Task<ActionResult<Products>> Put(Products products)
 		{
 			if (products == null) return BadRequest();
 			if (!db.products.Any(x => x.id_product == products.id_product)) return NotFound();

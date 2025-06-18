@@ -24,14 +24,12 @@ namespace Backend.Controllers
 			configuration = conf;
 		}
 
-		[Authorize(Roles = "admin, emplo, user")]
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<Users>>> Get()
 		{
 			return await db.users.ToListAsync();
 		}
 		
-		[Authorize(Roles = "admin, emplo, user")]
 		[HttpGet("{id}")]
 		public async Task<ActionResult<Users>> Get(int id)
 		{
@@ -80,8 +78,8 @@ namespace Backend.Controllers
 		}
 		
 		[Authorize(Roles = "admin, emplo")]
-		[HttpPatch]
-		public async Task<ActionResult<Users>> Patch(Users users)
+		[HttpPut]
+		public async Task<ActionResult<Users>> Put(Users users)
 		{
 			if (users == null) return BadRequest();
 			if (!db.users.Any(x => x.id_user == users.id_user)) return NotFound();
