@@ -5,7 +5,7 @@ import Footer from './Default/Footer';
 import TabsEmplo from './Tabs/TabsEmplo';
 import { useState } from 'react'
 import GetUsers from './Components/TableViews/Users/GetUsers';
-import Button from './Default/Button';
+
 
 export default function AppEmplo() {
   const [tab, setTab] = useState('products', 'orders', 'ord_det')
@@ -30,8 +30,8 @@ export default function AppEmplo() {
             <h2>Имя товара</h2>
             Описание товара
             <h4>Цена</h4>
-            <Button>Выкинуть из корзины</Button>
-            <Button>Выкинуть из корзины</Button>
+            <Button>Редактировать</Button>
+            <Button>Удалить</Button>
           </li>
         </ul> */}
 

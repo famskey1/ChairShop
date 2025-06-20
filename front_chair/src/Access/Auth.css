@@ -68,6 +68,10 @@ input, button {
   animation: gradientShift 15s ease infinite;
   background-size: 200% 200%;
 }
+.smallWords{
+  font-size: 10px;
+  background:local ;
+}
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }

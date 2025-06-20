@@ -47,9 +47,9 @@
   },
   {
     "ContainingType": "Backend.Controllers.Ord_detController",
-    "Method": "Patch",
+    "Method": "Put",
     "RelativePath": "api/v1/Ord_det",
-    "HttpMethod": "PATCH",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -171,9 +171,9 @@
   },
   {
     "ContainingType": "Backend.Controllers.OrdersController",
-    "Method": "Patch",
+    "Method": "Put",
     "RelativePath": "api/v1/Orders",
-    "HttpMethod": "PATCH",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -295,9 +295,9 @@
   },
   {
     "ContainingType": "Backend.Controllers.ProductsController",
-    "Method": "Patch",
+    "Method": "Put",
     "RelativePath": "api/v1/Products",
-    "HttpMethod": "PATCH",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -419,9 +419,9 @@
   },
   {
     "ContainingType": "Backend.Controllers.UsersController",
-    "Method": "Patch",
+    "Method": "Put",
     "RelativePath": "api/v1/Users",
-    "HttpMethod": "PATCH",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [

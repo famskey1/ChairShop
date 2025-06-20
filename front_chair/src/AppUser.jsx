@@ -2,8 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Default/Header'
 import Footer from './Default/Footer'
-import Basket from './Components/Basket'
-import Catalog from './Components/Catalog'
+import CatalogAndBasket from './Components/CatalogAndBasket'
 import MenuUser from './Components/MenuUser'
 
 export default function AppUser() {
@@ -12,8 +11,7 @@ export default function AppUser() {
         <Header/>
         <div className='menu'>
           <MenuUser/>
-          <Catalog/>
-          <Basket/>
+          <CatalogAndBasket/>
         </div>
         <Footer/>
     </div>

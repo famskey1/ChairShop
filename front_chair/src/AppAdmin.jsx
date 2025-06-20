@@ -5,7 +5,7 @@ import Footer from './Default/Footer';
 import TabsAdmin from './Tabs/TabsAdmin';
 import { useState } from 'react'
 import GetUsers from './Components/TableViews/Users/GetUsers';
-import Button from './Default/Button';
+
 
 export default function AppAdmin() {
   const [tab, setTab] = useState('users','products', 'orders', 'ord_det')

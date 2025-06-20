@@ -4,17 +4,20 @@ import './Auth.css'
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Button from '../Default/Button';
+import Check from './Check';
 
 export default function Register({isActive}) {
   const navigate = useNavigate();
-    
+ 
   async function HandleSubmit(event) {
         event.preventDefault();
         const formData = new FormData(event.target);
         const users = Object.fromEntries(formData.entries());
-
+        
         if(!users.name || !users.surname || !users.login || !users.password || !users.address)
             {alert("Пожайлуста, заполните все поля!"); return;}
+        Check(users.password);
+        
         try{
             const responce = await fetch("https://localhost:7153/api/v1/users", {
                 method: "POST", 
@@ -45,7 +48,10 @@ export default function Register({isActive}) {
         <input type ="text" placeholder="Фамилия" name = "surname"></input>
         <input type ="text" placeholder="Отчество (если есть)" name = "secondname"></input>
         <input type ="text" placeholder="Логин" name = "login"></input>
-        <input type ="password" placeholder="Пароль" name = "password"></input>
+        <div className='smallWords'>
+            Пароль должен быть длинной более 8ми символов, а также иметь цифры, заглавные и маленькие латинские буквы!
+        </div>
+        <input type ="password" placeholder="Пароль" name = "password" ></input>
         <input type ="text" placeholder="Адрес доставки на дом" name = "address"></input>
         <Button type ="submit">Зарегистрироваться</Button>
       </form>
