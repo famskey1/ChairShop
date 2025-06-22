@@ -10,6 +10,8 @@ namespace Backend.Models
 		public DateTime dt_buy { get; set; }
 		public float all_cost { get; set; }
 		public string way_pay { get; set; }
+		public string way_delivery { get; set; }
+		public bool is_delivered { get; set; }
 		
 	}
 }

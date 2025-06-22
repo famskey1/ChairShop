@@ -4,37 +4,26 @@ import Header from './Default/Header';
 import Footer from './Default/Footer';
 import TabsEmplo from './Tabs/TabsEmplo';
 import { useState } from 'react'
-import GetUsers from './Components/TableViews/Users/GetUsers';
-
+import GetProducts from './Components/TableViews/Products/GetProducts';
+import GetOrders from './Components/TableViews/Orders/GetOrders';
+import GetOrd_det from './Components/TableViews/Ord_det/GetOrd_det';
 
 export default function AppEmplo() {
   const [tab, setTab] = useState('products', 'orders', 'ord_det')
   return (
     <div>
       <Header/>
-      Страничка запривачена сотрудниками магазина стульев!!!1!
       <section className='goods'>
       <TabsEmplo active = {tab} onChange = {(current) => setTab(current)}/>
         {tab === 'products' &&(
-                <GetUsers/> 
+                 <div className='content'><GetProducts/> </div>
             )}
            {tab ===  'orders' &&(
-                <GetUsers/> 
+                 <div className='content'><GetOrders/> </div>
             )}
             {tab === 'ord_det' &&(
-                <GetUsers/>
+                 <div className='content'><GetOrd_det/></div>
             )}
-        
-        {/* <ul>
-          <li>
-            <h2>Имя товара</h2>
-            Описание товара
-            <h4>Цена</h4>
-            <Button>Редактировать</Button>
-            <Button>Удалить</Button>
-          </li>
-        </ul> */}
-
       </section>
       <Footer/>
     </div>

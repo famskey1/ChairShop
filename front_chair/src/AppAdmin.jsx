@@ -5,27 +5,28 @@ import Footer from './Default/Footer';
 import TabsAdmin from './Tabs/TabsAdmin';
 import { useState } from 'react'
 import GetUsers from './Components/TableViews/Users/GetUsers';
-
+import GetProducts from './Components/TableViews/Products/GetProducts';
+import GetOrders from './Components/TableViews/Orders/GetOrders';
+import GetOrd_det from './Components/TableViews/Ord_det/GetOrd_det';
 
 export default function AppAdmin() {
   const [tab, setTab] = useState('users','products', 'orders', 'ord_det')
   return (
     <div>
-      <Header/>
-      Страничка запривачена админом магазина стульев!!!1!     
-      <section className='goods'>
+      <Header/>   
+      
         <TabsAdmin active = {tab} onChange = {(current) => setTab(current)}/>
-          {tab === 'users' &&(
-            <GetUsers/> 
+          <section className='goods'>{tab === 'users' &&(
+              <div className='content'><GetUsers/></div>
             )}
           {tab === 'products' &&(
-            <GetUsers/> 
+             <div className='content'><GetProducts/> </div>
             )}
           {tab ===  'orders' &&(
-            <GetUsers/> 
+             <div className='content'><GetOrders/> </div>
             )}
           {tab === 'ord_det' &&(
-            <GetUsers/>
+             <div className='content'><GetOrd_det/></div>
             )}
             </section>
       <Footer/>

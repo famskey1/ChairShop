@@ -47,6 +47,7 @@ namespace Backend.Controllers
 			return Ok(users);
 		}
 
+		[HttpPost]
 		[Route("login")]
 		public async Task<ActionResult<Users>> Login(LoginPass login)
 		{
@@ -55,7 +56,7 @@ namespace Backend.Controllers
 			{
 				var claims = new[]
 				{
-					new Claim(JwtRegisteredClaimNames.Sub, configuration["JWT: Subject"]),
+					new Claim(JwtRegisteredClaimNames.Sub, configuration["JWT:Subject"]),
 					new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
 					new Claim(ClaimsIdentity.DefaultRoleClaimType, u.role),
 					new Claim("id_user", u.id_user.ToString()),
@@ -77,23 +78,23 @@ namespace Backend.Controllers
 			return Unauthorized();
 		}
 		
-		[Authorize(Roles = "admin, emplo")]
 		[HttpPut]
 		public async Task<ActionResult<Users>> Put(Users users)
 		{
 			if (users == null) return BadRequest();
 			if (!db.users.Any(x => x.id_user == users.id_user)) return NotFound();
+			db.users.Update(users);
 			await db.SaveChangesAsync();
 			return Ok(users);
 		}
 		
-		[Authorize(Roles = "admin, emplo")]
 		[HttpDelete("{id}")]
 		public async Task<ActionResult<Users>> Delete(int id) 
 		{
 			Users u = await db.users.FirstOrDefaultAsync(x => x.id_user == id);
 			if (u == null) return BadRequest();
 			db.users.Remove(u);
+			await db.SaveChangesAsync();
 			return Ok(u);
 		}
 	}

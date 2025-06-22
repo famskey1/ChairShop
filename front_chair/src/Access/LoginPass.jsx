@@ -27,15 +27,15 @@ export default function LoginPass({isActive}) {
         if(responce.ok){
           localStorage.setItem('body', JSON.stringify(data.users));
           localStorage.setItem('tokenKey', data.token);
-          localStorage.setItem("role", data.role);
-          if(role == 'admin'){
+          localStorage.setItem('role', data.role);
+          if(data.role == 'admin'){
             navigate('/admin_chair')
           }
-          else if(role == 'emplo') {
+          else if(data.role == 'emplo') {
             navigate('/staff_chair')
           }
           else{
-            navigate('/users_chair')
+            navigate('/users_chair/'+ data.users.id_user)
           }
           console.log(data.token);
         }
@@ -44,7 +44,7 @@ export default function LoginPass({isActive}) {
   }
 
   return (
-      <form className={`auth-form login-form ${isActive ? '' : 'active'}`}>
+      <form className={`auth-form login-form ${isActive ? '' : 'active'}`} onSubmit={(e) => e.preventDefault()}>
         <h2>Вход</h2>
         <input type ="text" placeholder="Логин" name = "login" onChange={(e) => SetLogin(e.target.value)}></input>
         <input type ="password" placeholder="Пароль" name = "password" onChange={(e) => SetPassword(e.target.value)}></input>

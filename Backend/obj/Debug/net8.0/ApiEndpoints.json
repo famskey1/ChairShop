@@ -499,7 +499,7 @@
     "ContainingType": "Backend.Controllers.UsersController",
     "Method": "Login",
     "RelativePath": "api/v1/Users/login",
-    "HttpMethod": "",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [

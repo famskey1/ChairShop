@@ -43,6 +43,7 @@ namespace Backend.Controllers
 		{
 			if (ord_det == null) return BadRequest();
 			if (!db.ord_det.Any(x => x.id_od == ord_det.id_od)) return NotFound();
+			db.ord_det.Update(ord_det);
 			await db.SaveChangesAsync();
 			return Ok(ord_det);
 		}
@@ -53,6 +54,7 @@ namespace Backend.Controllers
 			Ord_det od = await db.ord_det.FirstOrDefaultAsync(x => x.id_od == id);
 			if (od == null) return BadRequest();
 			db.ord_det.Remove(od);
+			await db.SaveChangesAsync();
 			return Ok(od);
 		}
 	}

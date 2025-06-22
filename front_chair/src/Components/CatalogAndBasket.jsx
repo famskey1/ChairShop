@@ -12,7 +12,9 @@ export default function Catalog() {
     const savedBasket = localStorage.getItem('basket');
     return savedBasket ? JSON.parse(savedBasket) : [];
   });
-
+function Ok(){
+  alert('Спасибо за покупку! Заказ уже готовиться!')
+}
   useEffect(() => {
     async function fetchProducts() {
       setLoading(true);
@@ -99,7 +101,13 @@ export default function Catalog() {
               <option value ='картой'>Картой</option>
               <option value ='онлайн'>Онлайн</option>
               </select>
-              <Button>Оплатить</Button>
+              Выберете способ доставки:
+              <select>
+              <option value ='самовывоз'>Самовывоз</option>
+              <option value ='почтой'>Почтой</option>
+              <option value ='на дом'>На дом</option>
+              </select>
+              <Button onClick={Ok}>Оплатить</Button>
               <div className='basket'>
                 {basket.length === 0 ? (
                   <p>Корзина пуста</p>) : (

@@ -43,6 +43,7 @@ namespace Backend.Controllers
 		{
 			if (products == null) return BadRequest();
 			if (!db.products.Any(x => x.id_product == products.id_product)) return NotFound();
+			db.products.Update(products);
 			await db.SaveChangesAsync();
 			return Ok(products);
 		}
@@ -53,6 +54,7 @@ namespace Backend.Controllers
 			Products p = await db.products.FirstOrDefaultAsync(x => x.id_product == id);
 			if (p == null) return BadRequest();
 			db.products.Remove(p);
+			await db.SaveChangesAsync();
 			return Ok(p);
 		}
 	}

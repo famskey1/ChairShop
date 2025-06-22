@@ -1,28 +1,18 @@
+import Header from "../../../Default/Header";
+import Footer from "../../../Default/Footer";
 import Button from "../../../Default/Button";
+import Delete from '../CRUD/Delete';
 
 export default function DeleteUsers(){
-    let num;
-    function Handle(event){
-        num = parseInt(event.target.value);
-    }
-    function Delete(id){
-        fetch("https://localhost:7153/api/v1/users/" + id, {
-            method:"DELETE"
-        })
-        .then(responce => {
-            if(!responce.ok){
-                throw new Error()
-            }alert("Успешно!")
-        }).catch(error => {
-            alert("Проблема с сервером " + error);
-        })
-    }
     return(
         <>
+        <Header/>
+        <h1>Перед удалением, убедитесь, что вы точно хотите это удалить!</h1>
         <form>
-            <input type ="number" placeholder="ID" name="id_user" onChange={Handle}></input>
-            <Button onClick={() => Delete(num)}>Удалить</Button>
+            <input type ="number" placeholder="ID" name="id_user">{user.id_user}</input>
+            <Button onClick={Delete("https://localhost:7153/api/v1/users/" + user.id_user)}>Удалить</Button>
         </form>
+        <Footer/>
         </>
     );
 }

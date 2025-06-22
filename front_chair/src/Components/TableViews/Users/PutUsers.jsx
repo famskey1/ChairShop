@@ -1,48 +1,40 @@
-import { useNavigate } from "react-router-dom";
+import Header from "../../../Default/Header";
+import Footer from "../../../Default/Footer";
 import Button from "../../../Default/Button";
+import Put from '../CRUD/Put';
 
 export default function PutUsers(){
-    const navigate = useNavigate();
+    function Update(e){
+        e.preventDefault();
+        const body = JSON.parse(localStorage.getItem('body'))
+        const chooseValue = document.querySelector('select').value;
+    }
+    const formData = new FormData(document.getElementById('update'))
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    Put(data, "https://localhost:7153/api/v1/users")
+    alert('Успешно!')
     
-    async function HandleSubmit(event) {
-        event.preventDefault();
-        const formdata = new FormData(event.target);
-        const users = Object.fromEntries(formdata.entries());
-
-        if(!users.id_user || !users.name || !users.surname || !users.login || !users.password || !users.role)
-        {allert("Пожайлуста, заполните все поля!"); return;}
-
-        try{
-            const responce = await fetch("https://localhost:7153/api/v1/users", {
-              method: "PUT",
-              headers: {"Accept": "application/json", "Content-Type": "application/json"},
-              body: JSON.stringify({
-                id_user: parseInt(users.id_user),
-                name: users.name,
-                surname: users.surname,
-                secondname: users.secondname,
-                login: users.login,
-                password: users.password,
-                address: users.address,
-                role: users.role
-              })  
-            })
-            await responce.json();
-            if(responce.ok) allert("Успешно!")
-                if(responce.status === 400){
-                    allert("Ошибка 400 (Bad Request)")
-                }
-        }catch(error){
-        allert("Проблема с сервером " + error)
-    } 
-}
-
     return(
         <>
-        <form onSubmit={HandleSubmit}>
-            <input type="text" placeholder="Имя" name = "name"></input>
+        <Header/>
+        <form id='update' onSubmit={Update}>
+            <input type="number" placeholder="ID" name = "id_user"></input>
+            <input type="text" placeholder="Имя" name = "name_user"></input>
+            <input type="text" placeholder="Фамилия" name = "surname_user"></input>
+            <input type="text" placeholder="Отчество(если есть)" name = "secondname_user"></input>
+            <input type="text" placeholder="Логин" name = "login"></input>
+            <input type="password" placeholder="Пароль" name = "password"></input>
+            <input type="text" placeholder="Адресс" name = "address"></input>
+            Роль:
+            <select name ='role'>
+              <option value ='user'>Пользователь</option>
+              <option value ='emplo'>Сотрудник</option>
+              <option value ='admin'>Администратор</option>
+            </select>
             <Button type ="submit">Редактировать</Button>
         </form>
+        <Footer/>
         </>
     );
 }

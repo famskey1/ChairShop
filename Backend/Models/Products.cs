@@ -13,6 +13,6 @@ namespace Backend.Models
 		public float price { get; set; }
 		public int count { get; set; }
 		public string? description { get; set; }
-		public string fotos { get; set; }
+		public string picture { get; set; }
 	}
 }

@@ -28,7 +28,7 @@ form {
   flex-direction: column;
   align-items: center;
 }
-input, button, select, option, .tadm, .templo{
+input, button, select, option{
   padding: 10px;
   border-radius: 10px;
   background: antiquewhite;
@@ -52,10 +52,9 @@ button:active{
 button:focus{
   outline: 3px solid #BAF812;
 }
-.tar{
+.tab{
   background: local;
   display: flex;
-  max-width: 600px; 
 }
 nav, aside{
   background-image: url(./Assets/wallpaper2.jpg);
@@ -68,6 +67,7 @@ nav, aside{
 }
 h1, h2, h4, p{
   background: local;
+  padding: 5px 0px;
 }
 h1{
   background:rgba(255, 255, 255, 0.7);
@@ -137,4 +137,9 @@ li{
   display: flex;
   flex-direction: column;
   background:local;
+}
+.info{
+  background:local;
+  display: flex
+  align-items normal;
 }

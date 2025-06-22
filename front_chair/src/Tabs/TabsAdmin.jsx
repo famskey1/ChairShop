@@ -2,7 +2,7 @@ import Button from "../Default/Button"
 
 export default function TabsAdmin({active, onChange}){
     return(
-        <section className="tar">
+        <section className="tab">
             <Button isActive = {active === 'users'} onClick = {() => onChange('users')}>Пользователи</Button>
             <Button isActive = {active === 'products'} onClick = {() => onChange('products')}>Товары</Button>
             <Button isActive = {active === 'orders'} onClick = {() => onChange('orders')}>Заказы</Button>

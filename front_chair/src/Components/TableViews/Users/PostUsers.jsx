@@ -1,44 +1,39 @@
-import { useEffect, useState } from "react";
+import Header from "../../../Default/Header";
+import Footer from "../../../Default/Footer";
 import Button from "../../../Default/Button";
+import Post from '../CRUD/Post';
 
 export default function PostUsers(){
-
-    async function HandleSubmit(event){
-        event.preventDefault();
-
-        const formData = new FormData(document.getElementById('post'));
-        const users = Object.fromEntries(formData.entries());
-
-        if(!users.name || !users.surname || !users.login || !users.password)
-        {allert("Пожайлуста, заполните все поля!"); return;}
-        try{
-            const responce = await fetch('https://localhost:7153/api/v1/users', {
-                method:"POST",
-                headers:{"Accept": "application/json", "Content-Type": "application/json"},
-                body: JSON.stringify({
-                    name: users.name,
-                    surname: users.surname,
-                    secondname: users.secondname,
-                    login: users.login,
-                    password: users.password,
-                    adress: users.adress,
-                    role: users.role
-                })
-            });
-
-            await responce.json();
-            if(responce.ok) allert("Успешно!")
-                if(responce.status === 400){allert("Ошибка 400 (Bad Request)")}
-        }catch(error){
-            alert("Проблема с сервером " + error)
-        }
+    function Create(e){
+        e.preventDefault();
+        const body = JSON.parse(localStorage.getItem('body'))
+        const chooseValue = document.querySelector('select').value;
     }
+    const formData = new FormData(document.getElementById('create'))
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    Post(data, "https://localhost:7153/api/v1/users")
+    alert('Успешно!')
+
     return(
         <>
-        <form onSybmit={HandleSubmit}>
-            <input type="text" placeholder="Имя" name ="name"></input>
+        <Header/>
+        <form id='create' onSubmit={Create}>
+            <input type="text" placeholder="Имя" name = "name_user"></input>
+            <input type="text" placeholder="Фамилия" name = "surname_user"></input>
+            <input type="text" placeholder="Отчество(если есть)" name = "secondname_user"></input>
+            <input type="text" placeholder="Логин" name = "login"></input>
+            <input type="password" placeholder="Пароль" name = "password"></input>
+            <input type="text" placeholder="Адресс" name = "address"></input>
+            Роль:
+            <select name ='role'>
+              <option value ='user'>Пользователь</option>
+              <option value ='emplo'>Сотрудник</option>
+              <option value ='admin'>Администратор</option>
+            </select>
             <Button type ="submit">Создать</Button>
         </form>
+        <Footer/>
         </>
     )
 }

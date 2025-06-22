@@ -42,7 +42,8 @@ namespace Backend.Controllers
 		public async Task<ActionResult<Orders>> Put(Orders orders)
 		{
 			if (orders == null) return BadRequest();
-			if (!db.orders.Any(x => x.id_order == orders.id_user)) return NotFound();
+			if (!db.orders.Any(x => x.id_order == orders.id_order)) return NotFound();
+			db.orders.Update(orders);
 			await db.SaveChangesAsync();
 			return Ok(orders);
 		}
@@ -53,6 +54,7 @@ namespace Backend.Controllers
 			Orders o = await db.orders.FirstOrDefaultAsync(x => x.id_order == id);
 			if (o == null) return BadRequest();
 			db.orders.Remove(o);
+			await db.SaveChangesAsync();
 			return Ok(o);
 		}
 	}
