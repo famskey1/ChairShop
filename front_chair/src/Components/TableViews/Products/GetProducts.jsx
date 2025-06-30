@@ -35,7 +35,7 @@ export default function GetProducts(){
                                 <h4>Имя картинки: {product.picture}</h4>
                             </div>
                                 <Button onClick={() => {navigate("put/products/" + product.id_product)}}>Редактировать</Button>
-                                <Button onClick={() => {navigate("delte/products/" + product.id_product)}}>Удалить</Button>
+                                <Button onClick={() => {navigate("delete/products/" + product.id_product)}}>Удалить</Button>
                               </li>
                 )}</ul>}
             </div>

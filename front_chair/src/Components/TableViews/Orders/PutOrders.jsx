@@ -6,16 +6,16 @@ import "moment/dist/locale/ru";
 import Put from '../CRUD/Put';
 
 export default function PutOrders(){
-    function Update(e){
-        e.preventDefault();
-        const body = JSON.parse(localStorage.getItem('body'))
-        const chooseValue = document.querySelector('select').value;
-    }
-    const formData = new FormData(document.getElementById('update'))
-    const data = Object.fromEntries(formData);
-    console.log(data);
-    Put(data, "https://localhost:7153/api/v1/products")
-    alert('Успешно!')
+    // function Update(e){
+    //     e.preventDefault();
+    //     const body = JSON.parse(localStorage.getItem('body'))
+    //     const chooseValue = document.querySelector('select').value;
+    // }
+    // const formData = new FormData(document.getElementById('update'))
+    // const data = Object.fromEntries(formData);
+    // console.log(data);
+    // Put(data, "https://localhost:7153/api/v1/products")
+    // alert('Успешно!')
     
     return(
         <>
